@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Indie+Flower&family=Metamorphous&display=swap"
+      rel="stylesheet"
+    />
+    <link href="CSS/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <h1> 🌸 TaskFlow</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link" href="#">Inicio</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">Contacto</a></li>
+            </ul>  
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="container text-center">
+          <h2>Lista de tareas </h2>
+          <button type="button" id="agregar">✏ Agregar tarea</button>
+          <button type="button" id="mover">💡 Mover tarea</button>
+          <button type="button" id="eliminar">❌ Borrar tarea</button>
+          <div class="row">
+            <div class="card col">
+              <h3>Tareas por hacer</h3>
+              <ul id="porHacer">
+                <li>ejemplo</li>
+                <li>ejemplo</li>
+                <li>ejemplo</li>
+                <li>ejemplo</li>
+              </ul>
+            </div>
+            <div class="card col">
+              <h3>Tareas en proceso</h3>
+              <ul id="enProceso">
+                <li>ejemplo</li>
+                <li>ejemplo</li>
+                <li>ejemplo</li>
+                <li>ejemplo</li>
+              </ul>
+            </div>
+            <div class="card col">
+              <h3>Tareas realizadas</h3>
+              <ul id="yaRealizadas">
+                <li>ejemplo</li>
+                <li>ejemplo</li>
+                <li>ejemplo</li>
+                <li>ejemplo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section>
+        <div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Agregar tarea</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label for="tareaNueva">Nueva tarea</label>
+        <input type="text" placeholder="Ingrese su nueva tarea">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <footer>🌸 TaskFlow © 2026</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

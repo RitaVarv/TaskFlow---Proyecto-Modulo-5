@@ -1,0 +1,158 @@
+/*Estilos generales*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(#ffe3ff, pink, #955199);
+  margin-bottom: 30px;
+}
+
+/* Estilos NavBar*/
+nav {
+  margin: 15px 5px;
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+nav ul {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+    gap: 1rem;
+}
+nav li {
+    font-family: "Indie Flower", cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 5px; 
+}
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+    color: #d76fb7; 
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #921c66;
+}
+
+/* Estilos de titulos*/
+h1 {
+margin-left: 20px;
+  text-align: center;
+  color: #d76fb7;
+  text-shadow: 1px 2px 1px #5b073c;
+  font-family: "Metamorphous", serif;
+  font-weight: bold;
+  font-size: 2rem;
+  font-style: normal;
+}
+
+h2 {
+  padding: 2rem;
+  font-family: "Cagliostro", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #d76fb7;
+}
+
+h3 {
+  padding: 20px 10px;
+  align-items: center;
+  font-family: "Cagliostro", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  width: 110%;
+  background-color: #a6feac;
+}
+
+/*Estilos de botones*/
+
+button {
+  padding: 10px 30px;
+  margin: 0px 20px;
+  border-radius: 40px;
+}
+#agregar {
+  background-color: #a6feac;
+  font-weight: bold;
+}
+#agregar:hover{
+    background-color: #ffcfd8;
+}
+#mover {
+  background-color: rgb(252, 242, 148);
+  font-weight: bold;
+}
+#mover:hover{
+    background-color: #ffcfd8;
+}
+#eliminar {
+  background-color: rgb(255, 109, 109);
+  font-weight: bold;
+}
+#eliminar:hover{
+    background-color: #ffcfd8;
+}
+
+/*Estilos del main*/
+
+.container {
+  margin-top: 1.5rem;
+  box-sizing: border-box;
+  background: linear-gradient(white, #fae0ee);
+  border: 5px solid #955199;
+  border-radius: 10%;
+  box-shadow: 15px 20px 10px #7b295d;
+}
+
+.card {
+  border: 5px solid #955199;
+  border-radius: 25%;
+  margin: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+/*Estilos de tareas*/
+
+.card ul {
+  list-style-type: none;
+margin-right: auto;
+}
+
+.card li {
+  margin: 20px 0px;
+  text-align: start;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.card li::before {
+  content: "🌸 ";
+  justify-content: start;
+}
+
+/*Estilos del footer*/
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #955199;
+  position: fixed;
+  height: 30px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 5px;
+  color: #fae0ee;
+}
