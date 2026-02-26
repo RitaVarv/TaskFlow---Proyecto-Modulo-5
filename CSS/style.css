@@ -5,11 +5,9 @@
 }
 
 :root {
-  --color-bg: #F0FFDF;
-  --color-topbg:#A8DF8E;
---color-font1: #FFAAB8;
-
-
+  --color-bg: #f0ffdf;
+  --color-topbg: #a8df8e;
+  --color-font1: #ffaab8;
 }
 
 html {
@@ -18,7 +16,7 @@ html {
 
 body {
   height: 100%;
-  background: linear-gradient(#feecfb, rgb(251, 208, 215), #FFAAB8);
+  background: linear-gradient(#feecfb, rgb(251, 208, 215), #ffaab8);
   margin-bottom: 30px;
 }
 
@@ -31,31 +29,31 @@ nav {
   height: 50px;
 }
 nav ul {
-    display: flex;
-    margin-left: auto;
-    list-style: none;
-    gap: 1rem;
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+  gap: 1rem;
 }
 nav li {
-    font-family: "Indie Flower", cursive;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 5px; 
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 5px;
 }
 .nav-link {
-    color: inherit;
-    text-decoration: none;
-    color: #d76fb7; 
-    font-size: 30px;
-    font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  color: #d76fb7;
+  font-size: 30px;
+  font-weight: bold;
 }
-.nav-link:hover{
-    color: #921c66;
+.nav-link:hover {
+  color: #921c66;
 }
 
 /* Estilos de titulos*/
 h1 {
-margin-left: 20px;
+  margin-left: 20px;
   text-align: center;
   color: #d76fb7;
   text-shadow: 1px 2px 1px #5b073c;
@@ -79,85 +77,78 @@ h3 {
   font-family: "Cagliostro", sans-serif;
   font-weight: bold;
   font-size: 25px;
-  width: 110%;
+  width: 100%;
   background-color: var(--color-topbg);
 }
 
 /*Estilos de botones*/
 
-button {
+.btn-menu {
   color: inherit;
   padding: 10px 25px;
   margin: 0px 20px;
   border-radius: 40px;
-  background-color:#FFD8DF;
- 
+  background-color: #ffd8df;
 }
 
-.delete-button {
-  padding: 5px;
-  box-sizing: border-box;
-  font-size: 15px;
+.btn-borrar {
+  font-size: 1rem;
+  text-align: center;
+  background-color: var(--color-font1);
+  padding: 4px;
+  border-radius: 25%;
+  margin-left: 5rem;
 }
 
 #agregar {
   background-color: #a6feac;
   font-weight: bold;
 }
-#agregar:hover{
-    background-color: #ffcfd8;
+#agregar:hover {
+  background-color: #ffcfd8;
 }
 #mover {
   background-color: rgb(252, 242, 148);
   font-weight: bold;
 }
-#mover:hover{
-    background-color: #ffcfd8;
-}
-#eliminar {
-  background-color: rgb(255, 109, 109);
-  font-weight: bold;
-}
-#eliminar:hover{
-    background-color: #ffcfd8;
+#mover:hover {
+  background-color: #ffcfd8;
 }
 
 /*Estilos del main*/
 
-.container {
+.menu-container {
   margin-top: 1.5rem;
   box-sizing: border-box;
-  background: linear-gradient(white, #F0FFDF);
-  border: 5px solid #955199;
   border-radius: 40px;
-  box-shadow: 15px 20px 10px hsl(322, 50%, 32%, 0.5);
 }
 
-.card {
+.tareaBox {
   border: 5px solid #955199;
   border-radius: 40px;
   background-color: var(--color-bg);
   margin: 2.5rem;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
+  min-height: 300px;
   overflow: hidden;
 }
 
 /*Estilos de tareas*/
 
-.card ul {
+.tareaBox ul {
   list-style-type: none;
-margin-right: auto;
+  margin-right: auto;
 }
 
-.card li {
+.tareaBox li {
   margin: 20px 0px;
   text-align: start;
   font-family: "Indie Flower", cursive;
   font-weight: bold;
   font-size: 1.5rem;
 }
-.card li::before {
+.tareaBox li::before {
   content: "🌸 ";
   justify-content: start;
 }
