@@ -22,11 +22,11 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <h1> 🌸 TaskFlow</h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item"> <a class="nav-link" href="#">Inicio</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">Contacto</a></li>
             </ul>  
@@ -38,35 +38,23 @@
       <section>
         <div class="container text-center">
           <h2>Lista de tareas </h2>
-          <button type="button" id="agregar">✏ Agregar tarea</button>
+          <button type="button" id="agregar" data-bs-toggle="modal" data-bs-target="#modalTarea">✏ Agregar tarea</button>
           <button type="button" id="mover">💡 Mover tarea</button>
           <button type="button" id="eliminar">❌ Borrar tarea</button>
           <div class="row">
             <div class="card col">
               <h3>Tareas por hacer</h3>
-              <ul id="porHacer">
-                <li>ejemplo</li>
-                <li>ejemplo</li>
-                <li>ejemplo</li>
-                <li>ejemplo</li>
+              <ul id="porHacer" class="listaHacer">
               </ul>
             </div>
             <div class="card col">
               <h3>Tareas en proceso</h3>
-              <ul id="enProceso">
-                <li>ejemplo</li>
-                <li>ejemplo</li>
-                <li>ejemplo</li>
-                <li>ejemplo</li>
+              <ul id="enProceso" class="listaProceso">
               </ul>
             </div>
             <div class="card col">
               <h3>Tareas realizadas</h3>
-              <ul id="yaRealizadas">
-                <li>ejemplo</li>
-                <li>ejemplo</li>
-                <li>ejemplo</li>
-                <li>ejemplo</li>
+              <ul id="yaRealizadas" class="listaRealizadas">
               </ul>
             </div>
           </div>
@@ -75,7 +63,7 @@
     </main>
 
     <section>
-        <div class="modal" tabindex="-1">
+        <div class="modal fade" id="modalTarea" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -83,12 +71,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        <form class="lista-formu">
         <label for="tareaNueva">Nueva tarea</label>
-        <input type="text" placeholder="Ingrese su nueva tarea">
+        <input type="text" id="inputTarea" placeholder="Ingrese su nueva tarea">
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" id="btnGuardar" class="add-btn" onclick="guardarTarea()">Guardar</button>
       </div>
     </div>
   </div>
