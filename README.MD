@@ -48,3 +48,4 @@ Se creo con el objetivo de poner en practica y aplicar conceptos fundamentales d
 Este es un proyecto académico creado para el curso Talento Digital, programa Trainee Front-End de SENCE (2026). -Durante la elaboración se utilizaron los recursos académicos del aula virtual, tutoriales de youtube y ChatGPT como fuente de corrección, resolución de dudas y generación de ejemplos.
 
 ## VERSIÓN EN VIVO
+- https://ritavarv.github.io/TaskFlow---Proyecto-Modulo-5/
