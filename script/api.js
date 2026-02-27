@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
    obtenerClimaUbicacion()
 });
 
-
-
 function obtenerIcono(code) {
     if (code===0) return "☀";
     if (code <=3) return "⛅";

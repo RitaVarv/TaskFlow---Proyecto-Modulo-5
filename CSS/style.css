@@ -115,6 +115,18 @@ h3 {
   background-color: #ffcfd8;
 }
 
+/*Estilos modal*/
+
+.modal-content {
+  background: linear-gradient(#fff9c5, #ffd2f7, #c3cdff);
+  color: #d76fb7;
+  border: solid 2px #c9fbfd;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px;
+
+}
 /*Estilos del main*/
 
 /*Clima y fecha */
@@ -228,6 +240,36 @@ h3 {
 .tareaBox li::before {
   content: "🌸 ";
   justify-content: start;
+}
+
+.tarea-seleccionada {
+  background-color:var(--color-font1);
+  max-width: 400px;
+}
+
+#porHacer, #enProceso, #yaRealizadas {
+  min-height: 200px;
+  padding: 10px;
+}
+
+/*Estilo del loading*/
+
+.loading {
+  pointer-events: none;
+  position: relative;
+}
+
+.loading::after {
+  content: "🌸";
+  position: absolute;
+  right: 10px;
+  font-size: 40px;
+  animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+  from {transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
 }
 
 /*Estilos del footer*/

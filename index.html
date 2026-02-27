@@ -75,19 +75,19 @@
             <div class="col-12 col-md-4">
               <div class="tareaBox col">
                 <h3>Tareas por hacer</h3>
-                <ul id="porHacer"></ul>
+                <ul id="porHacer" class="ul-destino"></ul>
               </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="tareaBox col">
                 <h3>Tareas en proceso</h3>
-                <ul id="enProceso"></ul>
+                <ul id="enProceso" class="ul-destino"></ul>
               </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="tareaBox col">
                 <h3>Tareas realizadas</h3>
-                <ul id="yaRealizadas"></ul>
+                <ul id="yaRealizadas" class="ul-destino"></ul>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Agregar tarea</h5>
+              <h4 class="modal-title">Agregar tarea</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -110,18 +110,12 @@
             </div>
             <div class="modal-body">
               <form class="lista-formu">
-                <label for="tareaNueva">Nueva tarea</label>
+                <label for="inputTarea">Nueva tarea</label>
                 <input type="text" id="inputTarea" placeholder="Ingrese su nueva tarea"/>
-                <select id="edtadoTarea">
-                  <option value="pendiente">Pendiente</option>
-                  <option value="proceso">En proceso</option>
-                  <option value="hecha">Hecha</option>
-                  <span id="msgEstado"></span>
-                </select>
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" id="btnGuardar" class="add-btn">
+              <button type="button" id="btnGuardar" class="btn-menu">
                 Guardar
               </button>
             </div>
@@ -142,6 +136,7 @@
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
       crossorigin="anonymous"
     ></script>
+    <script src="script/interactividad.js"></script>
     <script src="script/api.js"></script>
     <script src="script/script.js"></script>
   </body>
