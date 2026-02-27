@@ -43,6 +43,21 @@
       <section>
         <div class="menu-container text-center">
           <h2>Lista de tareas</h2>
+<section class="horaFecha">
+</section>
+
+<section class="clima">
+  <div class="card-fecha">
+  <span id="horayFecha">Cargando...</span>
+  </div>
+  <div class="clima-card">
+    <div class="clima-info">
+    </div>
+  </div>
+
+</section>
+
+
           <button
             type="button"
             class="btn-menu"
@@ -97,12 +112,15 @@
               <form class="lista-formu">
                 <label for="tareaNueva">Nueva tarea</label>
                 <input type="text" id="inputTarea" placeholder="Ingrese su nueva tarea"/>
+                <select id="edtadoTarea">
+                  <option value="pendiente">Pendiente</option>
+                  <option value="proceso">En proceso</option>
+                  <option value="hecha">Hecha</option>
+                  <span id="msgEstado"></span>
+                </select>
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn" data-bs-dismiss="modal">
-                Cerrar
-              </button>
               <button type="button" id="btnGuardar" class="add-btn">
                 Guardar
               </button>
@@ -124,6 +142,7 @@
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
       crossorigin="anonymous"
     ></script>
+    <script src="script/api.js"></script>
     <script src="script/script.js"></script>
   </body>
 </html>

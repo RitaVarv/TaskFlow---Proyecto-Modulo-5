@@ -11,7 +11,7 @@ function crearTarea(texto) {
 
   const borrarBoton = document.createElement(`button`);
   borrarBoton.type = "button";
-  borrarBoton.textContent = `Borrar`;
+  borrarBoton.textContent = "Borrar";
   borrarBoton.className = `btn-borrar`;
   
   
@@ -24,9 +24,9 @@ function crearTarea(texto) {
 }
 
 function guardarTarea() {
-  const tarea = inputTarea.value.trim();
-  if (tarea) {
-    crearTarea(tarea);
+  const tareaGuardada = inputTarea.value.trim();
+  if (tareaGuardada) {
+    crearTarea(tareaGuardada);
     inputTarea.value = ``;
     tareaLocal();
   }
@@ -35,7 +35,7 @@ function guardarTarea() {
 function tareaLocal() {
   const tareas = [];
   porHacer.querySelectorAll(`li`).forEach((item) => {
-    tareas.push(item.textContent.trim());
+    tareas.push(item.firstChild.textContent.trim());
   });
   localStorage.setItem(`tareas`, JSON.stringify(tareas));
 }
@@ -51,6 +51,7 @@ btnGuardar.addEventListener(`click`, guardarTarea)
 inputTarea.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
-    document.getElementById("btnGuardar").click();
+    btnGuardar.click();
   }
 });
+
