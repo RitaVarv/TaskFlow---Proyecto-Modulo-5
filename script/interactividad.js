@@ -40,14 +40,43 @@ listas.forEach((ul) => {
     );
     if (!ulDestino) return;
 
-await animarCarga(tareaSeleccionada, 2000)
-  
-      ulDestino.appendChild(tareaSeleccionada);
-      tareaSeleccionada.classList.remove("loading");
-      tareaSeleccionada.classList.remove("tarea-seleccionada");
-      tareaSeleccionada = null;
+    await animarCarga(tareaSeleccionada, 2000);
 
-      modoMover = false;
-      btnMover.textContent = "Mover tarea";
+    ulDestino.appendChild(tareaSeleccionada);
+    tareaSeleccionada.classList.remove("loading");
+    tareaSeleccionada.classList.remove("tarea-seleccionada");
+    tareaSeleccionada = null;
+
+    modoMover = false;
+    btnMover.textContent = "Mover tarea";
   });
+});
+
+/*mouseover botones*/
+
+const boton = document.querySelectorAll("button");
+
+boton.forEach((boton) => {
+  boton.addEventListener(`mouseover`, () => {
+    boton.style.backgroundColor = "#ffcfd8";
+    boton.style.transform = "translateY(-5px)";
+    boton.style.boxShadow = "5px 6px 3px rgba(146, 28, 102, 0.5)";
+  });
+});
+
+boton.forEach((boton) => {
+  boton.addEventListener(`mouseout`, () => {
+    boton.style.backgroundColor = "";
+    boton.style.transform = "translateY(0px)";
+    boton.style.boxShadow = "none";
+  });
+});
+
+/* Enter en submit tarea*/
+
+inputFecha.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    btnGuardar.click();
+  }
 });

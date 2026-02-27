@@ -48,7 +48,7 @@ nav li {
   font-weight: bold;
 }
 .nav-link:hover {
-  color: #921c66;
+  color: rgb(146, 28, 102);
 }
 
 /* Estilos de titulos*/
@@ -104,22 +104,17 @@ h3 {
   background-color: #a6feac;
   font-weight: bold;
 }
-#agregar:hover {
-  background-color: #ffcfd8;
-}
 #mover {
   background-color: rgb(252, 242, 148);
   font-weight: bold;
 }
-#mover:hover {
-  background-color: #ffcfd8;
-}
+
 
 /*Estilos modal*/
 
 .modal-content {
   background: linear-gradient(#fff9c5, #ffd2f7, #c3cdff);
-  color: #d76fb7;
+  color: rgb(216, 111, 184);
   border: solid 2px #c9fbfd;
   border-radius: 20px;
   font-size: 15px;
@@ -150,14 +145,6 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#btnCiudad {
-    color: inherit;
-  padding: 5px 10px;
-  margin: 0px 20px;
-  border-radius: 40px;
-  background-color: #ffd8df;
 }
 
 #ciudadInput {
@@ -237,6 +224,12 @@ h3 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+.tareaBox ul li small {
+  color: #d76fb7;
+  font-size: 1rem;
+  font-family: "Cagliostro", sans-serif ;
+}
 .tareaBox li::before {
   content: "🌸 ";
   justify-content: start;
@@ -284,4 +277,36 @@ footer {
   left: 0px;
   right: 0px;
   padding: 5px;
+}
+
+@media (max-width: 992px) {
+
+  nav {
+    background: var(--color-topbg);
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    height: 80px;
+  }
+
+  .navbar-toggler {
+  position: absolute;
+  right: 20px;
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+nav ul {
+  background: var(--color-topbg);
+}
+
+nav ul li {
+  font-size: 10px;
+  text-align: center;
+}
+
 }
